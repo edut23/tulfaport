@@ -1,0 +1,37 @@
+/* Estilização do container geral */
+.container {
+    background: linear-gradient(135deg, #433E99, #2A266A);
+    min-height: 110vh; /* Para permitir scroll */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    padding: 2rem 0;
+    z-index: 1;
+  }
+  
+
+/* Parágrafo que contém todas as frases */
+.paragraph {
+    font-size: 5rem;
+    line-height: 5.5rem;
+    max-width: 50%;
+    text-align: start;
+    margin: 0 auto;
+  }
+  
+  /* Estilo padrão de uma frase */
+  .sentence {
+    opacity: 0.3;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Estilo da frase destacada */
+  .sentence.highlight {
+    font-weight: 700;
+    opacity: 1;
+    color: #ffffff; /* Realce visual */
+    transform: scale(1.1);
+  }
